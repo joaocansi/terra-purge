@@ -1,0 +1,9 @@
+name: TerraPurge
+version: '${project.version}'
+main: br.com.joaocansi.terrapurge.Main
+api-version: '1.19'
+depend: [PlotSquared]
+commands:
+  terrapurge:
+    description: command to give user the plot ground remover.
+    permission: terrapurge.admin
