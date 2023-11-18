@@ -79,7 +79,7 @@ item:
 If you're completely beginner and don't even know how to start a minecraft server, I highly recommend you to follow the steps at [Spigot](https://www.spigotmc.org/wiki/buildtools/) before downloading this plugin.
 
 These are the following steps to use the plugin:
-1. Download [TerraPurge]()
+1. Download [TerraPurge](https://github.com/joaocansi/terra-purge/releases)
 2. Move `.jar` file to your `plugins` folder
 3. Reload the server.
 
