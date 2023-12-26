@@ -1,4 +1,4 @@
-package br.com.joaocansi.terrapurge.plot;
+package br.com.joaocansi.terrapurge.models;
 
 import com.plotsquared.core.plot.Plot;
 import com.sk89q.worldedit.EditSession;
@@ -9,7 +9,6 @@ import com.sk89q.worldedit.regions.Region;
 import com.sk89q.worldedit.world.World;
 import com.sk89q.worldedit.world.block.BlockTypes;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 
 import java.util.HashMap;
 import java.util.UUID;

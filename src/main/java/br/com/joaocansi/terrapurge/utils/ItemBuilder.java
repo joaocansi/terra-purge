@@ -1,4 +1,4 @@
-package br.com.joaocansi.terrapurge.shared.factories;
+package br.com.joaocansi.terrapurge.utils;
 
 import br.com.joaocansi.terrapurge.Config;
 import org.bukkit.Material;

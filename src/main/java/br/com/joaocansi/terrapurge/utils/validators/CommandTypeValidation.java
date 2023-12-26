@@ -1,4 +1,4 @@
-package br.com.joaocansi.terrapurge.shared.validators;
+package br.com.joaocansi.terrapurge.utils.validators;
 
 public class CommandTypeValidation {
     private String[] args;

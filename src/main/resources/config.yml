@@ -3,6 +3,7 @@ messages:
   terra_purge_item_gave: "&2&l[SERVER] &aYou gave {amount} excavation item to {player}"
   terra_purge_confirmed: "&2&l[SERVER] &aPlot excavation confirmed"
   terra_purge_cancelled: "&2&l[SERVER] &cPlot excavation cancelled"
+  player_not_found: "&2&l[SERVER] &cPlayer not found"
 
 require_confirmation: true
 confirmation_inventory:

@@ -1,8 +1,8 @@
-package br.com.joaocansi.terrapurge.plot.events;
+package br.com.joaocansi.terrapurge.listeners;
 
-import br.com.joaocansi.terrapurge.shared.Items;
-import br.com.joaocansi.terrapurge.gui.TerraPurgeConfirmationGUI;
-import br.com.joaocansi.terrapurge.plot.Terra;
+import br.com.joaocansi.terrapurge.utils.Items;
+import br.com.joaocansi.terrapurge.gui.ConfirmationGUI;
+import br.com.joaocansi.terrapurge.models.Terra;
 import com.plotsquared.core.PlotAPI;
 import com.plotsquared.core.player.PlotPlayer;
 import com.plotsquared.core.plot.Plot;
@@ -13,7 +13,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
-public class TerraPurgeListener implements Listener {
+public class TerraPurgeInteractListener implements Listener {
     @EventHandler
     public void onTerraPurgeItemClick(PlayerInteractEvent e) {
         Player p = e.getPlayer();
@@ -35,6 +35,6 @@ public class TerraPurgeListener implements Listener {
 
         Terra terraGround = new Terra(plot);
         Terra.data.put(p.getUniqueId(), terraGround);
-        new TerraPurgeConfirmationGUI(p);
+        new ConfirmationGUI(p);
     }
 }

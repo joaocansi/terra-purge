@@ -1,6 +1,5 @@
-package br.com.joaocansi.terrapurge.shared;
+package br.com.joaocansi.terrapurge.utils;
 
-import br.com.joaocansi.terrapurge.shared.factories.ItemBuilder;
 import org.bukkit.inventory.ItemStack;
 
 public class Items {

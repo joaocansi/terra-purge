@@ -1,10 +1,9 @@
-package br.com.joaocansi.terrapurge.gui.events;
+package br.com.joaocansi.terrapurge.listeners;
 
 import br.com.joaocansi.terrapurge.Config;
-import br.com.joaocansi.terrapurge.shared.Items;
-import br.com.joaocansi.terrapurge.plot.Terra;
-import br.com.joaocansi.terrapurge.shared.Messages;
-import org.bukkit.Sound;
+import br.com.joaocansi.terrapurge.utils.Items;
+import br.com.joaocansi.terrapurge.models.Terra;
+import br.com.joaocansi.terrapurge.utils.Messages;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

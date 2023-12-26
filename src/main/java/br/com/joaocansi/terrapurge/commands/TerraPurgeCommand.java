@@ -1,18 +1,15 @@
 package br.com.joaocansi.terrapurge.commands;
 
-import br.com.joaocansi.terrapurge.Config;
-import br.com.joaocansi.terrapurge.shared.Items;
-import br.com.joaocansi.terrapurge.shared.Messages;
-import br.com.joaocansi.terrapurge.shared.validators.CommandTypeValidation;
+import br.com.joaocansi.terrapurge.utils.Items;
+import br.com.joaocansi.terrapurge.utils.Messages;
+import br.com.joaocansi.terrapurge.utils.validators.CommandTypeValidation;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 
 public class TerraPurgeCommand implements CommandExecutor {
     @Override
@@ -34,7 +31,15 @@ public class TerraPurgeCommand implements CommandExecutor {
         ItemStack item = Items.TERRA_PURGE_ITEM.clone();
         item.setAmount(amount);
 
-        p.getInventory().addItem(item);
+        Player to = Bukkit.getPlayer(name);
+        if (to == null || !to.isOnline()) {
+            p.sendMessage(Messages.PLAYER_NOT_FOUND
+                    .replace("{player}", name)
+                    .replace("{amount}", String.valueOf(amount)));
+            return false;
+        }
+
+        to.getInventory().addItem(item);
         p.sendMessage(Messages.TERRA_PURGE_ITEM_GAVE
                 .replace("{player}", name)
                 .replace("{amount}", String.valueOf(amount)));

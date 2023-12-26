@@ -1,7 +1,7 @@
 package br.com.joaocansi.terrapurge.gui;
 
 import br.com.joaocansi.terrapurge.Config;
-import br.com.joaocansi.terrapurge.shared.factories.ItemBuilder;
+import br.com.joaocansi.terrapurge.utils.ItemBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -9,10 +9,10 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.Objects;
 
-public class TerraPurgeConfirmationGUI {
+public class ConfirmationGUI {
     private final Inventory inventory;
 
-    public TerraPurgeConfirmationGUI(Player p) {
+    public ConfirmationGUI(Player p) {
         inventory = Bukkit
                 .createInventory(
                         null,
