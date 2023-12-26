@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <b>OBS:</b> Plugin development isn't my main activity. If you need a well-suported plugin I highly recommend you doing your own or hiring someone to do make.
+  <b>OBS:</b> Plugin development isn't my main activity. If you need a well-suported plugin I highly recommend you doing your own or hiring someone to make.
 </p>
 
 <p align="center">
