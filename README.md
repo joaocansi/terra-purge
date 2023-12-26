@@ -1,3 +1,6 @@
+<p align="center">
+  <b>OBS:</b> Plugin development isn't my main activity. If you need a well-suported plugin I highly recommend you doing your own or hiring someone to do make.
+</p>
 <h1 align="center">
   <img alt="Terra-Purge" src="./.github/assets/logo.png" title="Terra-Purge" />
 </h1>
